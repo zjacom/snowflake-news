@@ -53,8 +53,9 @@ def run():
 if __name__ == "__main__":
     run()
 
-    # 매일 오전 9시 실행
-    schedule.every().day.at("09:00").do(run)
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
+    # GitHub Actions 등 CI 환경에서는 1회 실행 후 종료
+    if not os.environ.get("CI"):
+        schedule.every().day.at("09:00").do(run)
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
