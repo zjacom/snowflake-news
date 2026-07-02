@@ -36,9 +36,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           cp state.json /tmp/state_backup.json
-          git fetch origin main
+          git fetch origin
           git reset --hard origin/main
           cp /tmp/state_backup.json state.json
           git add state.json
           git diff --staged --quiet || git commit -m "chore: update state [skip ci]"
-          git push origin main
+          git push origin HEAD:main
