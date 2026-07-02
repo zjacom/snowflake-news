@@ -1,3 +1,19 @@
 {
-  "sent_urls": []
+  "sent_urls": [
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-01-wif-snowflake-workloads-external-services",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-30-analytical-search-public-preview",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-30-integrated-saas-listings-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-29-dynamic-iceberg-table-replication-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-26-semantic-views-inline-view-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-26-semantic-views-variables",
+    "https://docs.snowflake.com/en/release-notes/2026/10_22",
+    "https://docs.snowflake.com/en/release-notes/2026/10_21",
+    "https://docs.snowflake.com/en/release-notes/2026/10_20",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-hds-certification-france",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-marketplace-agentic-ai-growth",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/claude-sonnet-5-snowflake-cortex-ai",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-agents-grounded-context",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/data-platform-legal-ai-outcomes",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/dataiku-cobuild-snowflake-ai-governance"
+  ]
 }
