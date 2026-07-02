@@ -8,8 +8,6 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
@@ -21,6 +19,14 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
+      - name: Restore state
+        uses: actions/cache@v4
+        with:
+          path: state.json
+          key: state-${{ github.run_id }}
+          restore-keys: |
+            state-
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -30,15 +36,3 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
         run: python main.py
-
-      - name: Save state
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          cp state.json /tmp/state_backup.json
-          git fetch origin
-          git reset --hard origin/main
-          cp /tmp/state_backup.json state.json
-          git add state.json
-          git diff --staged --quiet || git commit -m "chore: update state [skip ci]"
-          git push --force-with-lease origin HEAD:main
