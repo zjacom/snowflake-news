@@ -1,7 +1,12 @@
 import os
+import sys
 import schedule
 import time
 from dotenv import load_dotenv
+
+# Windows 콘솔 UTF-8 출력
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 from src.scraper import release_notes, blog
 from src.summarizer.claude import summarize
