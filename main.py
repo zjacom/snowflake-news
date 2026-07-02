@@ -32,17 +32,30 @@ def process_items(items: list[dict], st: dict) -> int:
     return sent_count
 
 
+def fetch_with_retry(fetch_fn, label: str, retries: int = 3) -> list[dict]:
+    """fetch 함수를 최대 retries회 재시도한다."""
+    for attempt in range(1, retries + 1):
+        try:
+            return fetch_fn()
+        except Exception as e:
+            print(f"  [{label}] 시도 {attempt}/{retries} 실패: {e}")
+            if attempt < retries:
+                time.sleep(10 * attempt)
+    print(f"  [{label}] 최대 재시도 횟수 초과, 건너뜁니다.")
+    return []
+
+
 def run():
     print("=== Snowflake News 수집 시작 ===")
     st = state.load()
 
     print("[1/2] 릴리즈 노트 확인 중...")
-    rn_items = release_notes.fetch_list()
+    rn_items = fetch_with_retry(release_notes.fetch_list, "릴리즈 노트")
     rn_sent = process_items(rn_items, st)
     print(f"  → {rn_sent}건 전송 ({len(rn_items)}건 중 신규)")
 
     print("[2/2] 블로그 포스트 확인 중...")
-    blog_items = blog.fetch_list()
+    blog_items = fetch_with_retry(blog.fetch_list, "블로그")
     blog_sent = process_items(blog_items, st)
     print(f"  → {blog_sent}건 전송 ({len(blog_items)}건 중 신규)")
 
