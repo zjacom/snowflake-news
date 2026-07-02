@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime, timedelta, timezone
 
 BASE_URL = "https://docs.snowflake.com"
 LIST_URL = f"{BASE_URL}/en/release-notes/all-release-notes?bundle=true"
@@ -14,14 +15,27 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
+_DATE_FORMATS = ["%B %d, %Y", "%b %d, %Y"]
 
-def fetch_list() -> list[dict]:
-    """릴리즈 노트 목록 페이지에서 최신 항목들을 가져온다."""
+
+def _parse_date(date_str: str) -> datetime | None:
+    for fmt in _DATE_FORMATS:
+        try:
+            return datetime.strptime(date_str.strip(), fmt).replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+    return None
+
+
+def fetch_list(days: int = 7) -> list[dict]:
+    """릴리즈 노트 목록에서 최근 N일 이내 항목만 가져온다."""
     response = requests.get(LIST_URL, timeout=15, headers=HEADERS)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     items = []
+
     for card in soup.find_all("div", class_="release-card"):
         title_tag = card.find("h2")
         link_tag = card.find("a", href=lambda h: h and "/release-notes/" in h)
@@ -31,12 +45,17 @@ def fetch_list() -> list[dict]:
         if not (title_tag and link_tag):
             continue
 
+        date_str = date_tag.get_text(strip=True) if date_tag else ""
+        parsed = _parse_date(date_str)
+        if parsed and parsed < cutoff:
+            continue
+
         href = link_tag["href"]
         url = BASE_URL + href if href.startswith("/") else href
 
         items.append({
             "title": title_tag.get_text(strip=True),
-            "date": date_tag.get_text(strip=True) if date_tag else "",
+            "date": date_str,
             "description": desc_tag.get_text(strip=True) if desc_tag else "",
             "url": url,
             "source": "release_notes",
