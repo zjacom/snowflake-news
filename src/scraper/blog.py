@@ -15,6 +15,28 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
+PAGE_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/125.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+
+def fetch_post_content(url: str) -> str:
+    """개별 블로그 포스트 페이지에서 본문을 가져온다."""
+    response = requests.get(url, timeout=15, headers=PAGE_HEADERS)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    content = soup.select_one("article, div.blog-content, div.post-content, main")
+    if content:
+        return content.get_text(separator="\n", strip=True)[:4000]
+    return soup.get_text(separator="\n", strip=True)[:4000]
+
 
 def fetch_list(days: int = 7) -> list[dict]:
     """RSS 피드에서 최근 N일 이내 블로그 포스트만 가져온다."""
@@ -54,11 +76,19 @@ def fetch_list(days: int = 7) -> list[dict]:
                 separator="\n", strip=True
             )
 
+        # RSS 본문이 비어있으면 개별 포스트 페이지에서 가져온다
+        url = link_tag.get_text(strip=True)
+        if not content_text:
+            try:
+                content_text = fetch_post_content(url)
+            except Exception:
+                pass
+
         items.append({
             "title": title_tag.get_text(strip=True),
             "date": pub_date,
             "content": content_text[:4000],
-            "url": link_tag.get_text(strip=True),
+            "url": url,
             "source": "blog",
         })
 

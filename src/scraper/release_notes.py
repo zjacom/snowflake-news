@@ -30,6 +30,18 @@ def _parse_date(date_str: str) -> datetime | None:
     return None
 
 
+def fetch_content(url: str) -> str:
+    """개별 릴리즈 노트 페이지의 본문을 가져온다."""
+    response = requests.get(url, timeout=15, headers=HEADERS)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    content = soup.select_one("div.body, main article, div[role='main']")
+    if content:
+        return content.get_text(separator="\n", strip=True)[:4000]
+    return soup.get_text(separator="\n", strip=True)[:4000]
+
+
 def fetch_list(days: int = 7) -> list[dict]:
     """릴리즈 노트 목록에서 최근 N일 이내 항목만 가져온다."""
     response = requests.get(LIST_URL, timeout=15, headers=HEADERS)
@@ -55,25 +67,21 @@ def fetch_list(days: int = 7) -> list[dict]:
 
         href = link_tag["href"]
         url = BASE_URL + href if href.startswith("/") else href
+        description = desc_tag.get_text(strip=True) if desc_tag else ""
+
+        # 목록 페이지에 설명이 없으면 개별 페이지에서 본문을 가져온다
+        if not description:
+            try:
+                description = fetch_content(url)
+            except Exception:
+                pass
 
         items.append({
             "title": title_tag.get_text(strip=True),
             "date": date_str,
-            "description": desc_tag.get_text(strip=True) if desc_tag else "",
+            "description": description,
             "url": url,
             "source": "release_notes",
         })
 
     return items
-
-
-def fetch_content(url: str) -> str:
-    """개별 릴리즈 노트 페이지의 본문을 가져온다."""
-    response = requests.get(url, timeout=15, headers=HEADERS)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    content = soup.select_one("div.body, main article, div[role='main']")
-    if content:
-        return content.get_text(separator="\n", strip=True)
-    return soup.get_text(separator="\n", strip=True)[:4000]
