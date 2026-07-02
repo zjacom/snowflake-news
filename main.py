@@ -3,30 +3,51 @@ import schedule
 import time
 from dotenv import load_dotenv
 
-from src.scraper.release_notes import fetch_latest_release_notes
-from src.scraper.blog import fetch_latest_blog_posts
+from src.scraper import release_notes, blog
 from src.summarizer.claude import summarize
-from src.notifier.slack import send_message
+from src.notifier.slack import send
+from src import state
 
 load_dotenv()
 
 
+def process_items(items: list[dict], st: dict) -> int:
+    sent_count = 0
+    for item in items:
+        if not state.is_new(item["url"], st):
+            continue
+        try:
+            summary = summarize(item)
+            send(item, summary)
+            state.mark_sent(item["url"], st)
+            print(f"  ✓ {item['title']}")
+            sent_count += 1
+        except Exception as e:
+            print(f"  ✗ {item['title']}: {e}")
+    return sent_count
+
+
 def run():
-    print("Fetching Snowflake release notes...")
-    for item in fetch_latest_release_notes():
-        summary = summarize(item["title"], item["content"], item["source"])
-        send_message(item["title"], summary, item["url"], item["source"])
+    print("=== Snowflake News 수집 시작 ===")
+    st = state.load()
 
-    print("Fetching Snowflake blog posts...")
-    for item in fetch_latest_blog_posts():
-        summary = summarize(item["title"], item["content"], item["source"])
-        send_message(item["title"], summary, item["url"], item["source"])
+    print("[1/2] 릴리즈 노트 확인 중...")
+    rn_items = release_notes.fetch_list()
+    rn_sent = process_items(rn_items, st)
+    print(f"  → {rn_sent}건 전송 ({len(rn_items)}건 중 신규)")
 
-    print("Done.")
+    print("[2/2] 블로그 포스트 확인 중...")
+    blog_items = blog.fetch_list()
+    blog_sent = process_items(blog_items, st)
+    print(f"  → {blog_sent}건 전송 ({len(blog_items)}건 중 신규)")
+
+    state.save(st)
+    print(f"=== 완료: 총 {rn_sent + blog_sent}건 전송 ===\n")
 
 
 if __name__ == "__main__":
     run()
+
     # 매일 오전 9시 실행
     schedule.every().day.at("09:00").do(run)
     while True:
