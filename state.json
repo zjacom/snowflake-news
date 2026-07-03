@@ -14,6 +14,8 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/claude-sonnet-5-snowflake-cortex-ai",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-agents-grounded-context",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/data-platform-legal-ai-outcomes",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/dataiku-cobuild-snowflake-ai-governance"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/dataiku-cobuild-snowflake-ai-governance",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-dcr",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-metadata-based-sensitive-data-classification-recommendations-preview"
   ]
 }
