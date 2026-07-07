@@ -16,6 +16,9 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/data-platform-legal-ai-outcomes",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/dataiku-cobuild-snowflake-ai-governance",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-dcr",
-    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-metadata-based-sensitive-data-classification-recommendations-preview"
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-metadata-based-sensitive-data-classification-recommendations-preview",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-06-ai-translate-long-document-translation",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-05-domain-verification-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-03-cortex-search-resource-budgets"
   ]
 }
