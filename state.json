@@ -19,6 +19,10 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-metadata-based-sensitive-data-classification-recommendations-preview",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-06-ai-translate-long-document-translation",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-05-domain-verification-ga",
-    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-03-cortex-search-resource-budgets"
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-03-cortex-search-resource-budgets",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-07-snowflake-cowork-deep-research-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-container-runtime-2-7",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-delta-direct-variant-data-type",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-finops-cost-management-governance-snowflake"
   ]
 }
