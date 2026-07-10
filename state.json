@@ -25,6 +25,9 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-02-delta-direct-variant-data-type",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-finops-cost-management-governance-snowflake",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/ml-jobs-snowflake-data-clean-rooms",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/fpa-ai-modernization-snowplan-v2"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/fpa-ai-modernization-snowplan-v2",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-09-dcr",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/openai-gpt-5-6-snowflake-cortex-ai",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-governance-marketing-context-layer"
   ]
 }
