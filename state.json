@@ -28,6 +28,9 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/fpa-ai-modernization-snowplan-v2",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-09-dcr",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/openai-gpt-5-6-snowflake-cortex-ai",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-governance-marketing-context-layer"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-governance-marketing-context-layer",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-13-dynamic-iceberg-table-clone",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-13-spcs-backup-instance-types-pupr",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/apache-ossie-open-semantic-interchange-incubator"
   ]
 }
