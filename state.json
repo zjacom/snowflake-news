@@ -34,6 +34,13 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/apache-ossie-open-semantic-interchange-incubator",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-14-create-or-alter-ga",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-10-online-feature-store-preview",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/team-usa-bobsled-performance-data-collaboration"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/team-usa-bobsled-performance-data-collaboration",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-ai-transcribe-aac-support",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-integrated-saas-listings-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-named-key-pair-management",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-native-apps-consumer-maintenance-policies-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/10_24",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/federal-health-cloud-data-management",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/bidirectional-interoperability-snowflake-horizon-databricks"
   ]
 }
