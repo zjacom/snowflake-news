@@ -41,6 +41,10 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-native-apps-consumer-maintenance-policies-ga",
     "https://docs.snowflake.com/en/release-notes/2026/10_24",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/federal-health-cloud-data-management",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/bidirectional-interoperability-snowflake-horizon-databricks"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/bidirectional-interoperability-snowflake-horizon-databricks",
+    "https://docs.snowflake.com/en/release-notes/2026/10_25",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-dcm-projects-new-capabilities",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-dcr",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-volatile-udf-incremental-dynamic-tables"
   ]
 }
