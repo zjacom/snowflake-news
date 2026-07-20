@@ -45,6 +45,9 @@
     "https://docs.snowflake.com/en/release-notes/2026/10_25",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-dcm-projects-new-capabilities",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-dcr",
-    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-volatile-udf-incremental-dynamic-tables"
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-volatile-udf-incremental-dynamic-tables",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-17-oidc-federated-authentication-preview",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-20-dynamic-tables-dml-frozen-regions",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/document-intelligence-snowflake-cortex-ai-functions"
   ]
 }
