@@ -48,6 +48,13 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-16-volatile-udf-incremental-dynamic-tables",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-17-oidc-federated-authentication-preview",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-20-dynamic-tables-dml-frozen-regions",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/document-intelligence-snowflake-cortex-ai-functions"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/document-intelligence-snowflake-cortex-ai-functions",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-21-coco-desktop-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-20-built-in-network-rules-microsoft-apps",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-17-coco-desktop-new-capabilities",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-meta-campaigns-governed-conversion-signals",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-coco-built-to-scale-enterprise-ai",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-cortex-agents-enterprise-ai-scale",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-ai-partner-playbook"
   ]
 }
