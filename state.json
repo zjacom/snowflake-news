@@ -60,6 +60,11 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-21-tag-based-policies-preview",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-20-dynamic-tables-pass-through-policies",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/agentic-ai-roi-executive-framework",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-agents-agentic-ai"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-agents-agentic-ai",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-23-dbt-projects-on-snowflake-environment-variables",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-23-dcr",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-23-service-agent-user-type",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-23-show-cortex-base-models-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-22-multi-dt-manual-refresh"
   ]
 }
