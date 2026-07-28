@@ -70,6 +70,10 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-28-cortex-code-ai-suggestions-ga",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-ai-extract-parse-document-cse-network-restrictions",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-ai-extract-parse-document-gcp-dammam",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/observability-at-scale-whatnot-snowflake-summit"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/observability-at-scale-whatnot-snowflake-summit",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-dynamic-tables-custom-incremental-ga",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/thrive-dynamic-table-costs-custom-incremental",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/adaptive-compute-ga-azure-google-cloud",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-security-agentic-mcp-governance"
   ]
 }
