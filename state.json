@@ -74,6 +74,11 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-dynamic-tables-custom-incremental-ga",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/thrive-dynamic-table-costs-custom-incremental",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/adaptive-compute-ga-azure-google-cloud",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-security-agentic-mcp-governance"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/enterprise-ai-security-agentic-mcp-governance",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-29-privatelink-endpoint-multiple-hostnames-azure",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-28-coco-desktop-v1-20-2",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-query-history-agent-type-column",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-24-skill-plugin-sharing-preview",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-google-cloud-open-lakehouse"
   ]
 }
