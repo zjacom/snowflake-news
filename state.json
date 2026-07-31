@@ -79,6 +79,11 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-28-coco-desktop-v1-20-2",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-27-query-history-agent-type-column",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-24-skill-plugin-sharing-preview",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-google-cloud-open-lakehouse"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-google-cloud-open-lakehouse",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-30-dcr",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-30-dynamic-tables-adaptive-refresh-mode-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-29-data-quality-monitoring-dashboard-pupr",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/migrate-spark-to-snowflake",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/observe-apache-iceberg-open-observability"
   ]
 }
