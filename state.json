@@ -87,6 +87,11 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/observe-apache-iceberg-open-observability",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-31-ai-transcribe-m4a-mov-support",
     "https://docs.snowflake.com/en/release-notes/2026/10_27",
-    "https://docs.snowflake.com/en/release-notes/2026/10_26"
+    "https://docs.snowflake.com/en/release-notes/2026/10_26",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-04-multi-party-approval-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-access-history-agents-info-column",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-trust-center-ai-agents-inventory-preview",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-trust-center-ai-security-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-31-notebooks-compute-monitoring"
   ]
 }
