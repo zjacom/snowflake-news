@@ -92,6 +92,9 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-access-history-agents-info-column",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-trust-center-ai-agents-inventory-preview",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-trust-center-ai-security-ga",
-    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-31-notebooks-compute-monitoring"
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-31-notebooks-compute-monitoring",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-inline-stored-procedures-hybrid-tables-preview",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/agentic-intelligence-contract-review-snowflake",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/cto-circle-ai-native-engineering"
   ]
 }
