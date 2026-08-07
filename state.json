@@ -95,6 +95,8 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-31-notebooks-compute-monitoring",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-03-inline-stored-procedures-hybrid-tables-preview",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/agentic-intelligence-contract-review-snowflake",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/cto-circle-ai-native-engineering"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/cto-circle-ai-native-engineering",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-07-native-apps-agents-mcp-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-04-gateway-monitoring-ab-testing-ga"
   ]
 }
