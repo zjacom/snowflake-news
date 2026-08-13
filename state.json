@@ -101,6 +101,10 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-07-dcm-projects-ga",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-06-cowork-automations",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-10-ai-multi-embed-large-video-files-ga",
-    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-10-amazon-s3-tables-iceberg-rest-catalog-integration-ga"
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-10-amazon-s3-tables-iceberg-rest-catalog-integration-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/10_29",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-13-create-or-alter-dynamic-iceberg-tables",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-13-dcr",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/observe-mcp-server-cli-ai-agents-telemetry"
   ]
 }
