@@ -110,6 +110,12 @@
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-summit-2026-zero-copy-data-architecture",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/ma-data-integration",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-17-sensitive-data-classification-ai-mode-preview",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-internal-context-layer-for-ai-agents"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/snowflake-internal-context-layer-for-ai-agents",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-17-snowflake-coco-usage-history-view",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-12-native-apps-agent-relative-skills",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-12-postgres-compute-usage-history-view",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-intelligence-efficiency-dynamic-model-routing",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/dynamic-model-routing-open-models-cortex-ai",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/governed-ai-enterprise-controls-snowflake-coco"
   ]
 }
