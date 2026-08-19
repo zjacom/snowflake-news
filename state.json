@@ -116,6 +116,11 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-12-postgres-compute-usage-history-view",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-intelligence-efficiency-dynamic-model-routing",
     "https://www.snowflake.com/content/snowflake-site/global/en/blog/dynamic-model-routing-open-models-cortex-ai",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/governed-ai-enterprise-controls-snowflake-coco"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/governed-ai-enterprise-controls-snowflake-coco",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-19-data-movement-policies-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-externally-managed-iceberg-tables-horizon-irc-preview",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-semantic-views-power-bi-ingestion-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-16-feature-policy-rules-ga",
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-sre-unified-telemetry-context-graph-incident-investigation"
   ]
 }
