@@ -121,6 +121,9 @@
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-externally-managed-iceberg-tables-horizon-irc-preview",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-semantic-views-power-bi-ingestion-ga",
     "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-16-feature-policy-rules-ga",
-    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-sre-unified-telemetry-context-graph-incident-investigation"
+    "https://www.snowflake.com/content/snowflake-site/global/en/blog/ai-sre-unified-telemetry-context-graph-incident-investigation",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-20-ai-extract-parse-document-cse-network-restrictions-ga",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-20-dcr",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-user-skills-preview"
   ]
 }
